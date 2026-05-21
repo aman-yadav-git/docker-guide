@@ -23,14 +23,14 @@ Docker Containers
 
 ## Setup Instructions
 
-- **First download nodejs app by below command.**
+- **First download NodeJS app using the command below.**
 
 ```
 git clone git@github.com:aman-yadav-git/docker-guide.git
 cd docker-nodejs-project
 ```
 
-- Create file and add this 
+- Create a file and add this 
 
 ```
 vim mongodb.yaml
@@ -82,33 +82,51 @@ Mongo Express:
 http://localhost:8081
 ```
 
-> we get API interface and database UI 
+- We get the API interface and the database UI 
+
 
 ![image alt](https://github.com/aman-yadav-git/docker-guide/blob/main/docker-nodejs-project/image/app.png)
 ![image alt](https://github.com/aman-yadav-git/docker-guide/blob/main/docker-nodejs-project/image/datab.png)
 
-- Let add data in database 
+
+- Let's add data to the database 
+
 `http://localhost:8081`
 
->we will get this interface
+> We will get this interface
+
+
 ![imagw alt](https://github.com/aman-yadav-git/docker-guide/blob/main/docker-nodejs-project/image/pasted%20file.png)
+
 
 ```
 username: admin
 password: pass
 ```
-> its a standard login details 
 
-- Now create database by name `xyzcollege-db`
+
+> it's a standard login details 
+
+
+- Now create a database named `xyzcollege-db`
+
+
 ![image alt](https://github.com/aman-yadav-git/docker-guide/blob/main/docker-nodejs-project/image/creatdb.png)
 
+
 - Create User by name `users`
+
+
 ![image alt](https://github.com/aman-yadav-git/docker-guide/blob/main/docker-nodejs-project/image/creatuser.png)
 
+
 - Click to New Document
+
+
 ![image alt](https://github.com/aman-yadav-git/docker-guide/blob/main/docker-nodejs-project/image/newdoc.png)
 
-**Add below code and save it**
+
+**Add code below and save it**
 
 ```
 {
@@ -121,13 +139,19 @@ password: pass
 }
 ```
 
-> Like this 
+- Like this 
+
+
 ![image alt](https://github.com/aman-yadav-git/docker-guide/blob/main/docker-nodejs-project/image/code_user.png)
 
-- And now browse this url  
+
+- And now browse this URL  
 `http://localhost:5050/getUser`
 
-> you will view code that means database add successfully 
+
+- You will view code that means the database was added successfully 
+
+
 ![image alt](https://github.com/aman-yadav-git/docker-guide/blob/main/docker-nodejs-project/image/getuser.png)
 
 ---
